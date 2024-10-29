@@ -182,6 +182,48 @@ address {
   line-height: inherit;
 }
 
+/*Nuevo*/
+.callout .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+  gap: 10px; /* Espacio entre el texto y la imagen */
+  margin-bottom:120px;
+}
+
+.callout .text-content {
+  text-align: left; /* Alinea el texto del contenedor a la izquierda */
+  max-width: 50%; /* Ajusta el ancho máximo del texto */
+}
+
+.callout .text-content-right {
+  text-align: right; /* Alinea el texto del contenedor a la izquierda */
+  max-width: 50%; /* Ajusta el ancho máximo del texto */
+}
+
+.callout .image-content{
+  max-width: 40%; /* Ajusta el ancho máximo de la imagen */
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para pantallas pequeñas */
+  .callout .content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .callout .text-content, .callout .text-content-right {
+      text-align: center;
+      max-width: 100%;
+  }
+
+  callout .image-content {
+    text-align: center;
+    max-width: 100%;
+}
+}
+/*Nuevo*/
+
 ol,
 ul {
   padding-left: 2rem;
