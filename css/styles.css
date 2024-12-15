@@ -8255,6 +8255,20 @@ textarea.form-control-lg {
   background-image: var(--bs-gradient) !important;
 }
 
+.bg-gradient {
+  background-image: var(--bs-gradient) !important;
+}
+
+.bg-image {
+  min-height: 27rem; /* Altura suficiente para mostrar la imagen */
+    background: url("../assets/img/BGconLogo4.png") center center / cover no-repeat;
+    display: flex; /* Flexbox para el control del contenido */
+    align-items: flex-end; /* Coloca el contenido en la parte baja */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding-bottom: 2rem; /* Espaciado en la parte inferior */
+    position: relative;
+}
+
 .user-select-all {
   -webkit-user-select: all !important;
      -moz-user-select: all !important;
@@ -11168,7 +11182,6 @@ footer.footer .social-link:hover {
   width: 55%; /* Hace que la imagen ocupe todo el contenedor */
     height: auto; /* Mantiene la relación de aspecto */
     object-fit: cover; /* Cubre completamente el círculo */
-  padding-top: 4rem;
 
 }
 
