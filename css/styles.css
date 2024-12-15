@@ -8137,7 +8137,7 @@ textarea.form-control-lg {
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(1, 1, 1, 0.5) !important;
 }
 
 .text-white-50 {
@@ -10938,8 +10938,8 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111111;
+  border-left: 10px solid rgba(255, 255, 255, 0.3);
 }
 
 .sidebar-nav {
@@ -10971,7 +10971,7 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: rgba(255, 255, 255, 0.3);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -11172,16 +11172,29 @@ footer.footer .social-link:hover {
 
 .team-photo {
 
-  width: 55%; /* Hace que la imagen ocupe todo el contenedor */
+  width: 40%; /* Hace que la imagen ocupe todo el contenedor */
     height: auto; /* Mantiene la relación de aspecto */
     object-fit: cover; /* Cubre completamente el círculo */
 }
 
 .team-photo2 {
 
-  width: 55%; /* Hace que la imagen ocupe todo el contenedor */
+  width: 40%; /* Hace que la imagen ocupe todo el contenedor */
     height: auto; /* Mantiene la relación de aspecto */
     object-fit: cover; /* Cubre completamente el círculo */
 
 }
+
+.title-photo {
+
+  width: 40%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+  .title-photo {
+    width:100%;  /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+  }
+}
+
 
